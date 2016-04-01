@@ -22,6 +22,14 @@ Then, navigate to `http://localhost:8080/` in your browser.
 4. Move the slider around as desired.
 5. Reset becomes enabled when the slider reaches the end of the data set.
 
+## Files
+
+Files are looked up from the `/data` directory.
+
+These files must contain one `x,y` coordinate per line.
+
+You may add/remove files; for example, files containing data transformed by smoothing out the noise.
+
 ## Data Filtering
 
 Any point whose x or y coordinate is below 0.1 percentile or above 99.9 percentile is discarded.
