@@ -1,0 +1,32 @@
+<md-content layout-padding layout="column">
+
+    <canvas id="path"></canvas>
+
+    <md-slider id="slider"
+        ng-model="vm.slider.steps"
+        ng-disabled="vm.slider.active"
+        min="{{ vm.slider.min }}"
+        max="{{ vm.slider.max }}"
+        step="1"
+        md-discrete
+        aria-label="Time Steps"></md-slider>
+
+    <div layout="row" layout-align="center center" flex ng-cloak>
+        <md-button
+            ng-click="vm.clickUnpause()"
+            ng-disabled="vm.disableUnpause()"
+            class="md-raised md-primary"
+            aria-label="Draw">Draw</md-button>
+        <md-button
+            ng-click="vm.clickPause()"
+            ng-disabled="vm.disablePause()"
+            class="md-raised md-warn"
+            aria-label="Pause">Pause</md-button>
+        <md-button
+            ng-click="vm.clickReset()"
+            ng-disabled="vm.disableReset()"
+            class="md-raised md-accent"
+            aria-label="Reset">Reset</md-button>
+    </div>
+
+</md-content>

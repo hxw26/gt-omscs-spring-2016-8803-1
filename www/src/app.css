@@ -1,0 +1,35 @@
+
+md-toolbar {
+    min-height: 50px;
+}
+
+.md-toolbar-tools {
+    height: 50px;
+    max-height: 50px;
+}
+
+.sidebar-wrapper md-list {
+    padding: 0;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar-wrapper md-list-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar-wrapper md-list-item.active {
+    background-color: #ddd;
+}
+
+.content-wrapper md-slider {
+    margin: 20px 0;
+}
+
+.content-wrapper md-slider .md-sign .md-thumb-text {
+    font-size: 9px;
+}
+
+.content-wrapper .ranges {
+    text-align: right;
+    font-family: Monaco, Consolas, Courier New;
+}

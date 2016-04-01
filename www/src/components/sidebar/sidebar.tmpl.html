@@ -1,0 +1,12 @@
+<md-sidenav class="md-sidenav-left" md-is-locked-open="true">
+    <md-content>
+        <md-list flex>
+            <md-list-item
+                ng-repeat="fileName in ::vm.fileNames"
+                ng-click="vm.selectFile(fileName)"
+                ng-class="{ 'active':vm.selectedFile === fileName }">
+                <p>{{ ::fileName }}</p>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-sidenav>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>8803-1 Final Project</title>
+
+    <meta name="description" content="gatech-omscs-spring-2016-8803-1">
+    <meta name="author" content="Mehmet Bajin <bajin.mehmet@gmail.com>">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic">
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <link rel="stylesheet" href="node_modules/angular-material-icons/angular-material-icons.css" />
+    <link rel="stylesheet" href="src/app.css">
+
+</head>
+
+<body ng-app="app" layout="column">
+
+    <div ui-view="toolbar"></div>
+
+    <section layout="row">
+
+        <div ui-view="sidebar" class="sidebar-wrapper" hide-sm hide-xs show-gt-md></div>
+        <div ui-view="content" class="content-wrapper" hide-sm hide-xs show-gt-md></div>
+
+        <md-content flex layout-align="center center" layout-padding show-sm show-xs hide-md hide-lg>
+            <p style="text-align:center;">Please view on a screen that is at least 960px wide.</p>
+        </md-content>
+
+    </section>
+
+    <!-- VENDOR -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/lodash/lodash.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="node_modules/angular-material-icons/angular-material-icons.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!-- APP -->
+    <script src="src/app.js"></script>
+    <script src="src/config.constant.js"></script>
+    <script src="src/config.route.js"></script>
+    <script src="src/services/data.service.js"></script>
+    <script src="src/components/toolbar/toolbar.controller.js"></script>
+    <script src="src/components/sidebar/sidebar.controller.js"></script>
+    <script src="src/components/content/content.controller.js"></script>
+
+</body>
+
+</html>
